@@ -1,0 +1,22 @@
+﻿<Window x:Class="oef14._6_29_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:oef14._6_29_12"
+        mc:Ignorable="d"
+        Title="Les 14 Enquete" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbEnquete" Grid.Row="0" Grid.ColumnSpan="2" Margin="5 5 5 5"></ListBox>
+        <Button x:Name="btnVerwerken" Content="Verwerken" Grid.Row="1" Margin="5 5 5 5" Click="btnVerwerken_Click"/>
+        <Button x:Name="btnSluiten" Content="Sluiten" Grid.Row="1" Grid.Column="1" Margin="5 5 5 5" Click="btnSluiten_Click"/>
+    </Grid>
+</Window>
