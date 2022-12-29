@@ -31,7 +31,7 @@ namespace oef14._6_29_12
         {
             Array.Clear(enqueteArr, 0, 5 * 4);
             lbEnquete.Items.Clear();
-            string filePath = @"C:\Users\louag\source\repos\oef14.6 29-12\oef14.6 29-12\Enquete.txt";
+            string filePath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "Enquete.txt");
             if (!File.Exists(filePath))
             {
                 MessageBox.Show("File not found");
